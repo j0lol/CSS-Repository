@@ -1,0 +1,38 @@
+/* Hide Elements */
+
+/* Voice search */
+#voice-search-button, 
+/* Search button */
+#search-icon-legacy, 
+/* Recommended category bar */
+ytd-feed-filter-chip-bar-renderer,
+/* More From YT section */
+ytd-guide-section-renderer:nth-child(3),
+/* Sidebar Footer */
+#footer.style-scope.ytd-guide-renderer,
+/* Library, unless collapsed sidebar */
+[title="Library"]:not(.ytd-mini-guide-entry-renderer),
+/* Self-explanatory */
+[title="Trending"],                                     
+[title="Your videos"],
+[title="Liked videos"],
+[title="Report history"],
+[title="Help"],
+[title="Send feedback"]{
+    display:none!important;
+}
+
+/* Position searchbar and add a separator */
+ytd-searchbox{
+    padding:0!important;
+    border-left:1px solid #333;
+    margin-left: 39px!important;
+}
+
+
+/* remove separator between subs and history */
+ytd-guide-collapsible-section-entry-renderer.ytd-guide-section-renderer:not(:first-child) {
+    border-top: none;
+    margin-top: 0px;
+    padding-top: 0px;
+}
