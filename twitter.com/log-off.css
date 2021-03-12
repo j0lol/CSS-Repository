@@ -1,0 +1,29 @@
+body::before {
+    position: fixed;
+    top: 50vh;
+    display:table-cell;
+    width:100vw;
+    height:100vh;
+    color:#fff;
+    content:"Please log off of Twitter.";
+    text-align: center;
+    font-weight: bold;
+    font-size:5vw;
+    vertical-align:middle;
+    text-shadow: 3px 2px red;
+    z-index: 999999;
+    animation: 60s ease 0s normal forwards 1 fadein;
+    -webkit-animation: 60s ease 0s normal forwards 1 fadein;
+
+}
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}

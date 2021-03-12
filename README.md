@@ -10,6 +10,11 @@ Smaller header/search bar.
 ### moist-talkers-orb-fix.css
 Fixes a bug where the Moist talkers logo displays on some browsers.
 ![Preview](https://downloadmoredownloads.download/i/jwwpkbav.png)
+
+##twitter.com
+###log-off.css
+Tells you to log off after about 40 seconds of browsing. Very useful.
+![Preview](https://downloadmoredownloads.download/i/lqow13si.webm)
 ## Other Styling projects
 - [Scalable Discord (plugin)](https://github.com/j0lol/Scalable-Discord)
 - [Discord Colourful light mode (theme, usercss)](https://github.com/j0lol/i-fixed-discord)
