@@ -1,0 +1,50 @@
+/* Youtube small masthead (aka header) v2 */
+
+/* Masthead */
+#container.ytd-masthead {
+    height: 30px;
+}
+
+/* Make masthead go away when youtube tells it to */
+ytd-app[style~="--ytd-masthead-height:0px;"] #container.ytd-masthead  {
+    height: 0;
+}
+
+/* Make masthead margin go away when youtube tells it to */
+ytd-app[style~="--ytd-masthead-height:0px;"] #page-manager.ytd-app {
+    margin-top: 0;
+}
+/* masthead margin */
+#page-manager.ytd-app {
+    margin-top: 30px;
+}
+
+/* Makes "center" go in middle*/
+#center.ytd-masthead {
+    flex: 0 1 100%;
+}
+
+/* Remove these dumb buttons nobody uses */
+/* Comment this out to have icons like profile, etc */
+#buttons.ytd-masthead {
+    display: none;
+}
+#end.ytd-masthead {
+    display: none;
+}
+#voice-search-button{
+    display:none;
+}
+
+/* Make search bar smaller */
+#container.ytd-searchbox {
+    background: transparent;
+    border: none !important;
+    box-shadow: none !important;
+}
+/* Remove search icon background etc */
+#search-icon-legacy.ytd-searchbox {
+    background: transparent;
+    border: none !important;
+    box-shadow: none !important;
+}
