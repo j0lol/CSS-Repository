@@ -13,7 +13,7 @@ Fixes a bug where the Moist talkers logo displays on some browsers.
 
 ## twitter.com
 ### log-off.css
-Tells you to log off after about 40 seconds of browsing. Very useful. Stays anywhere on the site
+Tells you to log off after about 40 seconds of browsing. Very useful. Stays anywhere on the site due to the single-site nature of twitter.
 
 ![Preview](https://downloadmoredownloads.download/i/0mt8fjn6.png)
 
