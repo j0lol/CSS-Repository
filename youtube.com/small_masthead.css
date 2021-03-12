@@ -1,5 +1,8 @@
 /* Youtube small masthead (aka header) v2 */
 
+/* Aligns some elements with the masthead */
+:root {--ytd-masthead-height: 30px;}
+
 /* Masthead */
 #container.ytd-masthead {
     height: 30px;
