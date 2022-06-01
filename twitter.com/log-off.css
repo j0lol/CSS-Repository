@@ -1,42 +1,43 @@
 /* ==UserStyle==
-@name         Stop scrolling.
-@version      20220601.22.15
-@namespace    userstyles.world/user/j0lol
-@description  Useful style to stop wasting your time scrolling! The algorithm demands your attention.
-@author       j0lol
-@license      CC Zero
+@name           Stop scrolling!
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+@var number seconds "Seconds Until Popup fades in" 60
+@preprocessor   stylus
 ==/UserStyle== */
+@-moz-document domain("twitter.com"),
+domain("reddit.com") {
+    body::before {
+        position: fixed;
+        top: 0;
+        display: table-cell;
+        width: 100vw;
+        height: 100vh;
+        vertical-align: middle;
+        color: #fff;
+        line-height: 100vh;
+        pointer-events: none;
+        background-color: #0009;
+        content: "Stop scrolling.";
+        text-align: center;
+        font-weight: bold;
+        font-size: 5vw;
+        text-shadow: 3px 2px red;
+        z-index: 999999;
+        animation: (seconds * 2)s ease 0s normal forwards 1 fadein;
+    }
 
-@-moz-document domain("twitter.com"), domain("reddit.com"), domain("youtube.com"), domain("facebook.com") {
-body::before {
-    position: fixed;
-    top: 0;
-    display:table-cell;
-    width:100vw;
-    height:100vh;
-    vertical-align: middle;
-    color:#fff;
-    line-height: 100vh;
-    pointer-events: none;
-    background-color:#0009;
-    content:"Stop scrolling.";
-    text-align: center;
-    font-weight: bold;
-    font-size:5vw;
-    text-shadow: 3px 2px red;
-    z-index: 999999;
-    animation: 60s ease 0s normal forwards 1 fadein;
-}
-
-@keyframes fadein{
-    0% { opacity:0; }
-    66% { opacity:0; }
-    100% { opacity:1; }
-}
-
-@-webkit-keyframes fadein{
-    0% { opacity:0; }
-    66% { opacity:0; }
-    100% { opacity:1; }
-}
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 }
