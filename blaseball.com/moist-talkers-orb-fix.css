@@ -1,8 +1,0 @@
-/* Moist talkers ORB fix v3*/
-
-div[style="background-color: rgb(245, 254, 255);"],
-div[style="background: rgb(245, 254, 255) none repeat scroll 0% 0%;"],
-div[style="background: rgb(245, 254, 255) none repeat scroll 0% 0%;"] > div
-{
-    font-size:0 !important;
-}
